@@ -60,7 +60,7 @@ footer {
 
 /* Hero Section Styling */
 .hero-section {
-  background-image: url("C:\Users\shubh\Downloads\pharmacy-hero-bg.jpg"); /* Add a background image */
+  background-image: url("pbg.jpg"); /*Add a background image*/
   background-size: cover;
   background-position: center;
   padding: 5rem 2rem;

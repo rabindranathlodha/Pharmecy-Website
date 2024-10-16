@@ -1,0 +1,367 @@
+/* src/App.css */
+
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4DA489;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  color: #dfefff;
+}
+
+
+.navbar-logo {
+  height: 50px; /* Adjust the height as needed */
+}
+
+
+
+.nav-links a:hover {
+  color: #097d28; /* Color on hover */
+}
+
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #014715;
+  color: white;
+}
+
+
+/* src/App.css */
+
+/* Hero Section Styling */
+.hero-section {
+  background-image: url("C:\Users\shubh\Downloads\pharmacy-hero-bg.jpg"); /* Add a background image */
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.search-input {
+  padding: 1rem;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 25px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Featured Products Section */
+.featured-products {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.featured-products h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+}
+
+/* Product Item Styling */
+.product-item {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+}
+
+.product-item img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.product-item h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-item p {
+  margin: 0.5rem 0;
+}
+
+.product-item button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-item button:hover {
+  background-color: #218838;
+}
+
+/* Search Results Section */
+.search-results {
+  padding: 2rem;
+}
+
+.search-results h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.search-results p {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+/* src/App.css */
+
+/* Cart Page Styling */
+.cart-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.cart-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.cart-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Cart Table */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.cart-table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+.cart-product {
+  display: flex;
+  align-items: center;
+}
+
+.cart-product-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+  border-radius: 5px;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-control button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+}
+
+.quantity-control button:hover {
+  background-color: #218838;
+}
+
+.quantity-control span {
+  font-size: 1.2rem;
+  min-width: 30px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Remove Button */
+.remove-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.remove-btn:hover {
+  background-color: #c82333;
+}
+
+/* Cart Summary */
+.cart-summary {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.cart-summary h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.summary-details p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.summary-details h3 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.checkout-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.checkout-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cart-content {
+    flex-direction: column;
+  }
+}
+
+/* src/App.css */
+
+/* Notification Styling */
+.cart-notification {
+  background-color: #80b3e6; /* Light background to contrast with black text */
+  color: black; /* Set text color to black */
+  padding: 1rem;
+  border-radius: 5px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: slide-in 0.5s ease-out;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.cart-notification p {
+  margin: 0;
+  font-size: 1rem;
+  color: black; /* Set "Added to Cart" text to black */
+}
+
+.view-cart-btn {
+  background-color: #f8f9fa; /* Match the notification background */
+  color: black; /* Set "View Cart" button text to black */
+  border: 1px solid black; /* Add a black border to give it more definition */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.view-cart-btn:hover {
+  background-color: #e2e6ea; /* Light grey on hover */
+}
